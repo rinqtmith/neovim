@@ -23,18 +23,12 @@ local M = {
       end
     end
   end,
-  dependencies = { 
+  dependencies = {
     "nvim-lua/plenary.nvim",
     "nvim-tree/nvim-web-devicons", -- not strictly required, but recommended
     "MunifTanjim/nui.nvim",
   },
   opts = {
-    sources = {
-      "filesystem",
-      "buffers",
-      "git_status",
-      "document_symbols",
-    },
     source_selector = {
       winbar = true,
     },
