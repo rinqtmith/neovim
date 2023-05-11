@@ -54,16 +54,6 @@ local M = {
     },
     use_libuv_file_watcher = true,
     default_component_configs = {
-      icon = {
-        folder_empty = "󰜌",
-        folder_empty_open = "󰜌",
-      },
-      git_status = {
-        symbols = {
-          renamed   = "󰁕",
-          unstaged  = "󰄱",
-        },
-      },
       indent = {
         with_expanders = true, -- if nil and file nesting is enabled, will enable expanders
         expander_collapsed = "",
