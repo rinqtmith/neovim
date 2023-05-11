@@ -19,7 +19,7 @@ require("lazy").setup({
   },
   defaults = {
     lazy = false,
-    version = false, -- always use the latest git commit
+    version = false,            -- always use the latest git commit
   },
   checker = { enabled = true }, -- automatically check for plugin updates
   performance = {
@@ -34,5 +34,16 @@ require("lazy").setup({
     },
   },
 })
+
+-- LSP
+local lsp = require('lsp-zero').preset({})
+
+lsp.on_attach(function(_, bufnr)
+  lsp.default_keymaps({ buffer = bufnr })
+end)
+
+require('lspconfig').lua_ls.setup(lsp.nvim_lua_ls())
+
+lsp.setup()
 
 require("remap")
