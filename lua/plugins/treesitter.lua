@@ -19,6 +19,7 @@ local M = {
       "html",
       "javascript",
       "json",
+      "jsonc",
       "lua",
       "luadoc",
       "luap",
@@ -33,6 +34,7 @@ local M = {
       "vimdoc",
       "yaml",
       "css",
+      "yaml",
     },
     incremental_selection = {
       enable = true,
